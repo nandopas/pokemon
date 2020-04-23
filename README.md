@@ -16,3 +16,6 @@ Click do move to choose one of the moves at random until a pokemon is defeated.
 * Allow user to choose which move is used
 * Pretty up the Battle UI once above functionality is set
 
+
+
+
