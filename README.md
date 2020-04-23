@@ -15,9 +15,11 @@ Click do move to choose one of the moves at random until a pokemon is defeated.
 * Allow user to choose two pokemons themselves to face off
 * Allow user to choose which move is used
 * Pretty up the Battle UI once above functionality is set
-
+#### screen
 ![Alt text](/public/img1.PNG?raw=true "Optional Title")
+#### Do a move
 ![Alt text](/public/img2.PNG?raw=true "Optional Title")
+#### Game Over!
 ![Alt text](/public/img3.PNG?raw=true "Optional Title")
 
 
