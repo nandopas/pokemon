@@ -9,6 +9,9 @@ import {
 } from "react-router-dom";
 import { PokemonsContainer } from './containers/PokemonsContainer';
 import { BattleContainer } from './containers/BattleContainer';
+import { AboutContainer } from './containers/AboutContainer';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Navbar, Nav } from 'react-bootstrap';
 import './App.css';
 
 function App() {
@@ -19,23 +22,32 @@ function App() {
       uri: 'https://graphql-pokemon.now.sh'
     });
 
+    const [choices, setChoices] = React.useState([]);
+
+    //pass choices as a prop ro battle containter
+    //if empty, have battle container choose two pokemon at random
+
   	
 
     return (
     	<Router>
 		    <ApolloProvider client={client}>
-		    	<ul>
-		    		<li>
-		    			<Link to="/"> Home </Link>
-		    		</li>
-		    		<li>
-		    			<Link to="/battle"> Battle </Link>
-		    		</li>
-		    	</ul>
+
+		    	<Navbar className="custom-nav" variant="light" fixed="top">
+			    	<Navbar.Brand href="/">Pokemon Battler</Navbar.Brand>
+			    	<Nav.Link href="/battle">Battle</Nav.Link>
+			    	<Nav.Link href="/about">About</Nav.Link>
+			    </Navbar>
+			    	
+		    	<div style={{paddingTop: "50px"}}>
+		    	</div>
 		      	
 		      	<Switch>
+		      		<Route path="/about">
+		      			<AboutContainer />
+		      		</Route>
 		      		<Route path="/battle">
-		      			<BattleContainer />
+		      			<BattleContainer choices={choices} />
 		      		</Route>
 		      		<Route path="/">
 		        		<PokemonsContainer />

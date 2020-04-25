@@ -132,7 +132,7 @@ export function BattleLog(props) {
 			<h1>Battle Log</h1>
 
 			<div className="battle_name">
-				<p>{who()}</p>
+				<h2>{who()}</h2>
 			</div>
 
 			<button onClick={handleClick}>Do move</button>

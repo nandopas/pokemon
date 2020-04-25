@@ -21,10 +21,17 @@ export function BattleContainer(props) {
   	}
 
 
+
 	return (
 		<div>
-			<h1>Battle Page</h1>
+			<div className="container">
+			<div id="battle_background">
+				<h1 id="Battle">Battle</h1>
+			</div>
+			</div>
+		
 				<div className="container">
+
 					{pokemons && pokemons.map(pokemon => <Pokemon key={pokemon.id} 
 																  pokemon={pokemon} 
 																  handlePokemonClick={() => handlePokemonClick(pokemon)}
