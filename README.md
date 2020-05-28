@@ -1,6 +1,8 @@
 # Pokemon Battler
 Creating a pokemon battle app using React.js and GraphQl queries to external API
 
+Honestly just an way to get exposed to React hooks, so not super polished, will update in the future with more features too.
+
 I was inspired to make a pokemon battle app from this React tutorial: https://www.youtube.com/watch?v=yKFoAF7J0mc
 
 The app chooses two pokemon that enter into a battle. Pokemon HP left, turn, and messages are kept as state variables 
